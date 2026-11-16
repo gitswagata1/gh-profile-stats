@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "gh-profile-stats"
+abstract: "A command-line tool that scores a GitHub profile, estimates its rank and suggests improvements."
+type: software
+authors:
+  - family-names: "Banerjee"
+    given-names: "Swagata"
+repository-code: "https://github.com/gitswagata1/gh-profile-stats"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-16"
+keywords:
+  - github
+  - developer-tools
+  - cli
+  - analytics

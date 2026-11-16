@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh-profile-stats"
+version = "1.0.0"
+description = "Analyse a GitHub profile, estimate its rank and get tips to improve it."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Swagata Banerjee" }]
+keywords = ["github", "profile", "stats", "cli", "developer-tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Topic :: Software Development",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+gh-profile-stats = "gh_profile_stats.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gitswagata1/gh-profile-stats"
+Issues = "https://github.com/gitswagata1/gh-profile-stats/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
